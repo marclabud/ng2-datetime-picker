@@ -98,7 +98,7 @@ var DateTimePickerDirective = (function () {
     DateTimePickerDirective.prototype.updateDatepicker = function () {
         if (this.componentRef) {
             var component = this.componentRef.instance;
-            component.initDateTime(this.el['dateValue']);
+            component.initDateTime(this.el['dateValue'], this.defaultValue);
         }
     };
     DateTimePickerDirective.prototype.setElement = function (date) {
@@ -132,7 +132,7 @@ var DateTimePickerDirective = (function () {
         this.datetimePickerEl = this.componentRef.location.nativeElement;
         this.datetimePickerEl.addEventListener('keyup', this.keyEventListener);
         var component = this.componentRef.instance;
-        component.initDateTime(this.el['dateValue']);
+        component.initDateTime(this.el['dateValue'], this.defaultValue);
         component.dateOnly = this.dateOnly;
         this.styleDatetimePicker();
         component.changes.subscribe(this.valueChanged);
@@ -219,6 +219,10 @@ var DateTimePickerDirective = (function () {
         core_1.Input('close-on-select'), 
         __metadata('design:type', String)
     ], DateTimePickerDirective.prototype, "closeOnSelect", void 0);
+    __decorate([
+        core_1.Input('default-value'), 
+        __metadata('design:type', Date)
+    ], DateTimePickerDirective.prototype, "defaultValue", void 0);
     __decorate([
         core_1.Input(), 
         __metadata('design:type', String)
