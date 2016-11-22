@@ -22,9 +22,7 @@
     "url": "https://github.com/ng2-ui/ng2-datetime-picker/issues"
   },
   "homepage": "https://github.com/ng2-ui/ng2-datetime-picker#readme",
-  "dependencies": {},
-
-  "devDependencies": {
+  "dependencies": {
     "@angular/common": "2.1.2",
     "@angular/compiler": "2.1.2",
     "@angular/core": "2.1.2",
@@ -33,9 +31,10 @@
     "@angular/platform-browser": "2.1.2",
     "@angular/platform-browser-dynamic": "2.1.2",
     "@angular/router": "3.1.2",
-    "@angular/upgrade": "2.1.2",
-    "@types/google-maps": "^3.1.27",
-    "@types/hammerjs": "^2.0.32",
+    "@angular/upgrade": "2.1.2"
+  },
+
+  "devDependencies": {
     "@types/node": "^6.0.31",
     "angular2-template-loader": "^0.5.0",
     "core-js": "^2.4.1",
@@ -46,7 +45,7 @@
     "rxjs": "5.0.0-beta.12",
     "systemjs": "0.19.27",
     "ts-loader": "^0.8.2",
-    "typescript": "^2.0.0",
+    "typescript": "^2.0.3",
     "webpack": "^1.13.0",
     "zone.js": "^0.6.21"
   }
